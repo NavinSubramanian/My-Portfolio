@@ -119,7 +119,7 @@ html,body{
     height: 300%;
     width: 100%;
     overflow-x: hidden;
-    background-image: url('images/Rectangle\ 6\ \(3\).png');
+    background-image: url('/Rectangle.png');
     object-fit: contain;
     overflow-y: hidden;
     position: relative;
