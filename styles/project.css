@@ -29,7 +29,7 @@ html,body{
 }
 .work__container{
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 .section-4{
     max-width: 100%;
@@ -142,7 +142,7 @@ html,body{
             'content2 image2'
             'image3 content3';
         place-items: center;
-        height: 75vh;
+        height: 100vh;
     }
     .work__image1{
         grid-area: image1;
