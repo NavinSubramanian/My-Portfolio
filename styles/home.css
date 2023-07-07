@@ -150,7 +150,7 @@ html,body{
     font-family: 'mediasans';
     font-size: 80px;
     -webkit-text-stroke: 0.1px black;
-    color: transparent;
+    color: black;
     line-height: 75px;
     letter-spacing: 10px;
     z-index: 1;
@@ -378,6 +378,9 @@ html,body{
 {
     .section{
         max-width: 1280px;
+    }
+    .main-word{
+        color: transparent;
     }
     .dummy-word{
         display: block;
