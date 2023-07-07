@@ -4,13 +4,13 @@
 }
 
 @font-face {
-    font-family: sfpro;
-    src: url(sfpro.OTF);
+    font-family: 'sfpro';
+    src: url(../sfpro.OTF);
 }
 
 @font-face {
-    font-family: mediasans;
-    src: url(mediasans.otf);
+    font-family: 'mediasans';
+    src: url(../mediasans.otf);
 }
 
 html,body{
@@ -119,7 +119,7 @@ html,body{
     height: 300%;
     width: 100%;
     overflow-x: hidden;
-    background-image: url("./images/Rectangle\ 6\ \(3\).png");
+    background-image: url("./Rectangle\ 6\ \(3\).png");
     object-fit: contain;
     overflow-y: hidden;
     position: relative;
