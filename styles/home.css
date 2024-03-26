@@ -12,7 +12,10 @@
     font-family: 'mediasans';
     src: url(../mediasans.otf);
 }
-
+*{
+    cursor: none;
+    margin: 0;
+}
 html,body{
     font-family: 'Poppins';
     width: 100%;
@@ -26,7 +29,6 @@ html,body{
 
 .navbar{
     top: 0;
-    left: 0;
     width: 100%;
     height: 60px;
     padding: 1px 50px;
@@ -37,6 +39,27 @@ html,body{
     flex-direction: row;
     transition: 0.6s;
     z-index: 10000
+}
+.resumebutton{
+    background-color: #f3b448;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    transition: 1s;
+    cursor: none;
+    display: none;
+}
+.resumebutton:hover{
+    border-radius: 15px;
+}
+.resumebutton>a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+.navbar>div{
+    display: flex;
+    column-gap: 20px;
 }
 .navbar.sticky1{
     padding: 0.3px 50px;
@@ -72,6 +95,7 @@ html,body{
     width: 100%;
     position: fixed;
     height: 100%;
+    row-gap: 50px;
     background-color: #DDDDDD;
     display: none;
     flex-direction: column;
@@ -129,6 +153,26 @@ html,body{
     z-index: 14;
 }
 
+.left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+}
+
+@media screen and (max-width:540px) {
+    .left{
+        row-gap: 50px;
+    }
+    .bottom-thing{
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:400px) {
+    .left{
+        row-gap: 25px;
+    }
+}
+
 .left h3{
     font-family: 'sfpro';
     position: relative;
@@ -155,11 +199,21 @@ html,body{
     letter-spacing: 10px;
     z-index: 1;
 }
+.bottom-thing{
+    margin-top: 20px;
+}
+.word-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
 .dummy-word{
     font-family: 'mediasans';
     font-size: 180px;
     position: absolute;
-    bottom: 200px;
     letter-spacing: 10px;
     background-color: transparent;
     z-index: 31000;
@@ -167,15 +221,6 @@ html,body{
     pointer-events: all;
     font-weight: 100;
     color: transparent;
-    display: none;
-}
-.dummy-word-1{
-    left: 242px;
-    top: 70px;
-}
-.dummy-word-2{
-    left: 373px;
-    top: 265px;
 }
 
 .left img{
@@ -276,7 +321,6 @@ html,body{
     .left img{
         left: -150px;
     }
-    
 }
 
 /* xs */
@@ -310,6 +354,9 @@ html,body{
     }
     .mobile-nav{
         display: none;
+    }
+    .resumebutton{
+        display: block;
     }
     .header__bars{
         display: none;

@@ -18,19 +18,22 @@
     <script type="module" src="./src/main.js"></script>
 
     <header class="navbar content">
-      <a class="logo"><img src="/test2.png" class="logopict"></a>
-      <a class="control control-1" href="#Home" type="btn"><h5>Home</h5></a>
-      <a class="control control-2" href="#About"><h5>About</h5></a>
-      <a class="control control-3" href="#Skills"><h5>Skills</h5></a>
-      <a class="control control-4" href="#Projects"><h5>Projects</h5></a>
-      <a class="control control-5" href="/Resume.pdf" target="_blank"><h5>Resume</h5></a>
-      <a class="control control-6" href="#Contact"><h5>Contact</h5></a>
-      <button aria-label="mobile nav button" class="header__bars">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
+        <a class="logo"><img src="/test2.png" class="logopict"></a>
+        <div class="">
+            <a class="control control-1" href="#Home" type="btn"><h5>Home</h5></a>
+            <a class="control control-2" href="#About"><h5>About</h5></a>
+            <a class="control control-3" href="#Skills"><h5>Skills</h5></a>
+            <a class="control control-4" href="#Projects"><h5>Projects</h5></a>
+            <a class="control control-6" href="#Contact"><h5>Contact</h5></a>
+            
+        </div>
+        <button class="resumebutton"><a href="/Resume.pdf" target="_blank">Resume</a></button>
+        <button aria-label="mobile nav button" class="header__bars">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
 
-      </button>
+        </button>
 
     </header>
 
@@ -55,14 +58,14 @@
         <div class="static">
             <div class="left content">
                 <h3>👋 Hey, I am <span style="color: rgb(243, 180, 72);">N Navin Subramanian</span></h3>
-
-
-                <h1 data-text="Web devoloper" class="main-word">Web Devoloper</h1><h1 class="dummy-word-1 dummy-word content">Web Devoloper</h1>
-
-
-                <h1 data-text="UI Designer" class="main-word">UI Designer</h1><h1 class="dummy-word-2 dummy-word content">UI Designer</h1>
-
-
+                <div class="word-container">
+                    <h1 data-text="Web devoloper" class="main-word">Web Devoloper</h1>
+                    <h1 class="dummy-word-1 dummy-word content">Web Devoloper</h1>
+                </div>
+                <div class="word-container">
+                    <h1 data-text="UI Designer" class="main-word">UI Designer</h1>
+                    <h1 class="dummy-word-2 dummy-word content">UI Designer</h1>
+                </div>
                 <img src="/myself3.png" class="main-photo" style="will-change: transform; transform: translate3d(-0.23106vw, -0.2906vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
 
                 <div class="bottom-thing content">
@@ -78,10 +81,10 @@
             </div>
         </div>
         <div class="beziercurve">
-            <div class="section even section-2" id="About">
+            <div class="section even section-2" id="About" style="margin-bottom: 50px;">
                 <div class="container">
                     <h3 class="item-3" data-aos="fade-in">About Me</h3>
-                    <img src="/test12.jpeg" alt="" class="my__img item-1 content">
+                    <img src="/myself4.jpeg" alt="" class="my__img item-1 content">
 
                     <div class="item item-4" data-aos="slide-left"><p>Hello! My name is Navin Subramanian, and I'm a colledge student. I am passionate about web designing like this one you are viewing. I am always looking for new challenges and opportunities to learn and grow. When I'm not working, I enjoy my hobbies, which help me to stay creative and inspired.</p></div>
                     <div class="item item-5" data-aos="fade-in"><h3>My Interests</h3></div>
@@ -99,101 +102,72 @@
 
                 </div>
             </div>
-            <hr class="seperator"></hr>
             <div class="section odd section-3" id="Skills" >
                 <div class="header3 skill-header" data-aos="fade-left" data-aos-duration="1000">
-                    <h2>My <span>Skills</span></h2>
-                    <p>Here is my skills to represent my Expertise</p>
+                    <h2>My <span>Services</span></h2>
+                    <p>Here is why you should contact me!</p>
                 </div>
-                <div class="skill-main hidden" data-aos="fade-left">
-                    <div class="skill-bar">
-                        <div class="skillinfo">
-                            <p>HTML</p>
-                            <p class="percentage">90%</p>
+                <div class="skillbranchmain">
+                    <div class="skillLeft">
+                        <div>
+                            <h3>FrontEnd</h3>
+                            <div class="skillPhotos">
+                                <img src="logos/html.png" alt="">
+                                <img src="logos/css.png" alt="">
+                                <img src="logos/javascript.png" alt="">
+                                <img src="logos/react.png" alt="">
+                                <img src="logos/sass.png" alt="">
+                                <img src="logos/tailwind.png" alt="">
+                            </div>
                         </div>
-                        <div class="bars">
-                            <span class="html"></span>
+                        <div>
+                            <h3>BackEnd</h3>
+                            <div class="skillPhotos">
+                                <img src="logos/nodejs.png" alt="">
+                                <img src="logos/express.png" alt="">
+                                <img src="logos/django.png" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skillinfo">
-                            <p>CSS</p>
-                            <p class="percentage">70%</p>
+                        <div>
+                            <h3>DevTools</h3>
+                            <div class="skillPhotos">
+                                <img src="logos/docker.png" alt="">
+                                <img src="logos/git.png" alt="">
+                                <img src="logos/aws.png" alt="">
+                                <img src="logos/figma.png" alt="">
+                                <img src="logos/wordpress.png" alt="">
+                            </div>
                         </div>
-                        <div class="bars">
-                            <span class="css"></span>
-                        </div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skillinfo">
-                            <p>Python</p>
-                            <p class="percentage">85%</p>
-                        </div>
-                        <div class="bars">
-                            <span class="python"></span>
-                        </div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skillinfo">
-                            <p>C/C++</p>
-                            <p class="percentage">45%</p>
-                        </div>
-                        <div class="bars">
-                            <span class="CC"></span>
-                        </div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skillinfo">
-                            <p>Java</p>
-                            <p class="percentage">45%</p>
-                        </div>
-                        <div class="bars">
-                            <span class="java"></span>
+                        <div>
+                            <h3>Programming</h3>
+                            <div class="skillPhotos">
+                                <img src="logos/python2.png" alt="">
+                                <img src="logos/java.png" alt="">
+                                <img src="logos/c++.png" alt="">
+                            </div>
                         </div>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skillinfo">
-                            <p>MongoDB</p>
-                            <p class="percentage">80%</p>
+                    <div class="skillRight">
+                        <div class="content">
+                            <div>
+                                <i class="fa-brands fa-uikit" style="color: #F3B448;margin:0;font-size: 18px;"></i>
+                                <h3>UI/UX Designs</h3>
+                            </div>
+                            <p>Designing intuitive interfaces and seamless user experiences for digital products, focusing on aesthetics and usability.</p>
                         </div>
-                        <div class="bars">
-                            <span class="mongo"></span>
+                        <div class="content">
+                            <div>
+                                <i class="fa-solid fa-code" style="color: #F3B448;"></i>
+                                <h3>Web Development</h3>
+                            </div>
+                            <p>Creating responsive, functional, and scalable websites using modern technologies and best practices.</p>
                         </div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skillinfo">
-                            <p>javascript</p>
-                            <p class="percentage">30%</p>
-                        </div>
-                        <div class="bars">
-                            <span class="javascript"></span>
-                        </div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skillinfo">
-                            <p>Figma</p>
-                            <p class="percentage">95%</p>
-                        </div>
-                        <div class="bars">
-                            <span class="figma"></span>
-                        </div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skillinfo">
-                            <p>Django</p>
-                            <p class="percentage">35%</p>
-                        </div>
-                        <div class="bars">
-                            <span class="django"></span>
-                        </div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skillinfo">
-                            <p>NodeJS</p>
-                            <p class="percentage">35%</p>
-                        </div>
-                        <div class="bars">
-                            <span class="node"></span>
+                        <div class="content">
+                            <div>
+                                <i class="fa-solid fa-bug-slash" style="color: #F3B448;"></i>
+                                <h3>Website Optimization and Deployment (DevOps)</h3>
+                            </div>
+                            <p>Implementing efficient automation, deployment, and infrastructure management solutions to streamline development and operations workflows.</p>
                         </div>
                     </div>
                 </div>
@@ -211,36 +185,55 @@
 
                     <div class="work__project work__content1">
                         <h3 class="project__title-sub">Teacher Allocation</h3>
-                        <p class="project__desc desc__1">A project which was made for my colledge to be use to allocating teachers</p>
-                        <p class="project__desc desc__2">Made with <span class="highlight">Python</span> with lot of modules. PLanning to devolop into an application</p>
-                        <a href="https://github.com/NavinSubramanian/AutomaticStaffAllocation" target="_blank" class="project__links content">Git Link</a>
+                        <p class="project__desc desc__2">Led the successful execution of the Exam Cell project, leveraging our custom logic to efficiently allocate staff to appropriate 
+                            rooms, resulting in improved resource utilization and enhanced operational efficiency.</p>
+                        <p class="project__desc desc__1">Made with <span class="highlight">Python</span> with lot of modules. PLanning to devolop into an application</p>
+                        <a href="https://github.com/NavinSubramanian/StaffallocServer" target="_blank" class="project__links content">Git Link</a>
                     </div>
 
 
                     <!--Project 2-->
-                    <h2 class="project__title">IdeaJunker</h2>
+                    <h2 class="project__title">MakeTheMost</h2>
                     <div class="pic__wrapper content">
-                        <img src="/idea.png" class="project__pict work__image2">
+                        <img src="/makethemost.png" class="project__pict work__image2" style="object-fit: cover;">
                     </div>
 
-                    <div class="work__project work__content2">
-                        <h3 class="project__title-sub">IdeaJunker</h3>
-                        <p class="project__desc desc__1">Just a small website where we can post ideas and view others silly ideas to test my databse knowlege. Currently its not hosted</p>
-                        <p class="project__desc desc__2">Made with <span class="highlight">Html & CSS</span> along with <span class="highlight">Django</span> for a backend</p>
-                        <a href="" class="project__links content">Git Link</a>
+                    <div class="work__project work__content2" style="margin-top: 10px;">
+                        <h3 class="project__title-sub">MakeTheMost</h3>
+                        <p class="project__desc desc__2">implemented a comprehensive project utilizing fundamental wastes to turn to wonderful recipes with a community based web, 
+                            resulting in the successful creation of a dynamic web application hosted on Vercel.
+                            </p>
+                        <p class="project__desc desc__1">Made with <span class="highlight">Html & CSS</span> along with <span class="highlight">Django</span> for a backend</p>
+                        <a href="https://github.com/NavinSubramanian/MakeTheMost" target="_blank" class="project__links content">Git Link</a>
                     </div>
 
                     <!-- Project 3 -->
-                    <h3 class="project__title">Zuno UI Rework</h3>
+                    <h3 class="project__title">QR Data Guard</h3>
                     <div class="pic__wrapper content">
-                        <img src="/zuno.png" class="project__pict work__image3">
+                        <img src="/dataguard.png" class="project__pict work__image3">
                     </div>
 
                     <div class="work__project work__content3">
-                        <h3 class="project__title-sub">Zuno UI Rework</h3>
-                        <p class="project__desc desc__1">A project which was made for zuno UI/UX Rework Contest</p>
-                        <p class="project__desc desc__2">Made with <span class="highlight">Figma</span> with both mobile and lap view.</p>
-                        <a href="https://www.figma.com/file/rKHhG9g105sgphGiLkbJg9/Foundit-Design-Guideline-(3)-(1)?type=design&node-id=1%3A1265&mode=design&t=lzrDd6OfaVdmQEFL-1" target="_blank" class="project__links content">Figma Link</a>
+                        <h3 class="project__title-sub">QR Data Guard</h3>
+                        <p class="project__desc desc__2">A Secure and efficient system built using React for Generating many QR codes with unique code and securely storing user 
+                            information. It includes features such as a confirmation modal for data submission and automatic page refresh after successful 
+                            submission, ensuring a smooth and reliable user experience.</p>
+                        <p class="project__desc desc__1">Made with <span class="highlight">React</span> and <span>Express, Node</span> for the backend</p>
+                        <a href="https://github.com/NavinSubramanian/DriverQR" target="_blank" class="project__links content">Git Link</a>
+                    </div>
+
+                    <!--Project 4-->
+                    <h2 class="project__title">Training Test Portal</h2>
+                    <div class="pic__wrapper content">
+                        <img src="/gate.png" class="project__pict work__image4" style="object-fit: cover;">
+                    </div>
+
+                    <div class="work__project work__content4" style="margin-top: 10px;">
+                        <h3 class="project__title-sub">Training Test Portal</h3>
+                        <p class="project__desc desc__2">An ongoing project, which would serve as a practice test portal for the Gate Exam as well as Training Portal
+                            </p>
+                        <p class="project__desc desc__1">Made with <span class="highlight">React</span> along with <span class="highlight">Express</span> for a backend and <span class="highlight">MySQL</span> databse</p>
+                        <a href="https://github.com/NavinSubramanian/Gate-Portal" target="_blank" class="project__links content">Git Link</a>
                     </div>
 
                 </div>
@@ -278,14 +271,13 @@
 
   <!-- Custom Cursor -->
 
-  <div class="cursor"></div>
+  <!-- <div class="cursor"></div> -->
   <div class="cursor2"></div>
 
   <script>
-    var cursor = document.querySelector(".cursor");
     var cursor2 = document.querySelector(".cursor2");
     document.addEventListener("mousemove",function(e){
-        cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px;top: " + e.clientY + "px;";
+        cursor2.style.cssText = "left: " + e.clientX + "px;top: " + e.clientY + "px;";
     });
 
     let links = Array.from(document.querySelectorAll(".content"));
